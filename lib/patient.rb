@@ -17,7 +17,7 @@ class Patient
   end
   
   def doctors
-    appointment.collect { |appt| appt.doctor } 
+    appointments.collect { |appt| appt.doctor } 
   end
   
   def self.all
