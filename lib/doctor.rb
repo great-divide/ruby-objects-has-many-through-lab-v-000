@@ -5,7 +5,7 @@ class Doctor
   def initialize(name)
     @name = name
     @@all << self
-    # @appointments = []
+    @appointments = []
   end
   
   def new_appointment(patient, date)
@@ -17,7 +17,7 @@ class Doctor
   end
   
   def patients
-    Appointment.all.collect { |appt| appt.patient }
+    appointments.collect { |appt| appt.patient }
   end
     
   def self.all
