@@ -14,7 +14,7 @@ class Genre
   end
   
   def artists
-    self.collect { |genre|  == self }
+    songs.
   end
   
   def self.all
